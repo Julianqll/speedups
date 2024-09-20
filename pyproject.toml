@@ -8,8 +8,12 @@ packages = [{include = "speedups", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.12"
+matplotlib = "^3.9.2"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+run-project = "speedups.main:main"
